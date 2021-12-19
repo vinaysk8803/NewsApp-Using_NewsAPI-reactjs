@@ -10,7 +10,7 @@ export class NewsItem extends Component {
         <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{left:'90%',zIndex:'1'}}>
                {source}
               </span>
-          <img src={imageurl} className="card-img-top" alt="..." />
+          <img src={imageurl?imageurl:"https://source.unsplash.com/random/300x200"} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">
               {title}
