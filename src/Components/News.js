@@ -10,7 +10,7 @@ const News = (props)=>{
     const [loading, setLoading] = useState(true)
     const [page, setPage] = useState(1)
     const [totalResults, setTotalResults] = useState(0)
-    // document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
+   
     
     const capitalizeFirstLetter = (string) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
@@ -31,10 +31,12 @@ const News = (props)=>{
 
     }
 
+   
     useEffect(() => {
-        updateNews(); 
-    }, [])
- 
+      document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
+      updateNews(); 
+      // eslint-disable-next-line
+  }, [])
 
     // const handlePrevClick = async () => {
     //     setPage(page-1)
@@ -70,7 +72,7 @@ const News = (props)=>{
                     <div className="row">
                         {articles.map((element) => {
                             return <div className="col-md-4" key={element.url}>
-                                <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""} imageurl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
+                                <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""} imageurl={element.urlToImage} newsurl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
                             </div>
                         })}
                     </div>
