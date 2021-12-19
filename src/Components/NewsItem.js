@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class NewsItem extends Component {
-  render() {
+const NewsItem = (props)=> {
     let { title, description, imageurl, newsurl, author, date, source } =
-      this.props;
+      props;
     return (
       <div className="my-3">
         <div className="card">
@@ -19,7 +18,8 @@ export class NewsItem extends Component {
           </div>
           <img
             src={
-              imageurl ? imageurl : "https://source.unsplash.com/random/300x200"
+              imageurl
+               ? imageurl : "https://source.unsplash.com/random/300x200"
             }
             className="card-img-top"
             alt="..."
@@ -45,7 +45,7 @@ export class NewsItem extends Component {
         </div>
       </div>
     );
-  }
+  
 }
 
 export default NewsItem;
