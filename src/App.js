@@ -39,7 +39,12 @@ export default class App extends Component {
           <Route exact path="/sports"><News setProgress={this.setProgress} apiKey ={this.apiKey}  key="sports" pageSize ={this.pageSize} country = "in" category="sports"/> </Route>
           <Route exact path="/technology"><News setProgress={this.setProgress} apiKey ={this.apiKey}  key="technology" pageSize ={this.pageSize} country = "in" category="technology"/> </Route>
         </Switch>
+        <div className="d-flex justify-content-around">
+             <p>Source: newsapi.org</p>
+             <p>Made by - Vinay Singh Kaintura</p>
+        </div>
         </Router>
+
       </div>
     )
   }
