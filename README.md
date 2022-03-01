@@ -1,3 +1,15 @@
+# News Website by news api
+
+This Wesbite made by react js and bootstrap using news api , so there is no option to deploy this website
+thats why i am putting screenshots of website below
+
+## Screenshots of website
+![ss-1](https://user-images.githubusercontent.com/88550895/156121000-0ff97e08-2197-405a-a1b3-efd692f0a74b.png)
+![ss-2](https://user-images.githubusercontent.com/88550895/156121010-4c0ccad4-b55d-4be3-ab66-629e47acec4d.png)
+![ss-3](https://user-images.githubusercontent.com/88550895/156121020-77f67d4f-e787-440a-8182-81d784be963a.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
